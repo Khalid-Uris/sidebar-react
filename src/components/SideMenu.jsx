@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo/webscript.png";
+import user from "../assets/user.jpg";
 
 const SideMenu = () => {
   const [inactive, setInactive] = useState(false);
@@ -69,6 +70,16 @@ const SideMenu = () => {
             </a>
           </li>
         </ul>
+      </div>
+
+      <div className="side-menu-footer">
+        <div className="avatar">
+          <img src={user} alt="user" />
+        </div>
+        <div className="user-info">
+          <h5>Imran Khan</h5>
+          <p>imrankhan@gmail.com</p>
+        </div>
       </div>
     </div>
   );
